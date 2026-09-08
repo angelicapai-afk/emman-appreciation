@@ -4,15 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Small Appreciation for Emman 💚</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>For Emman 🤍</h1>
+    <main class="container">
 
-    <p>I made this little corner of the internet just for you.</p>
+        <section id="welcome" class="page active">
+            <p class="small-text">A little something for you...</p>
 
-    <button>Open this for me? 💌</button>
+            <h1>For Emman 💚</h1>
+
+            <p class="intro">
+                I made this little corner of the internet just for you.
+            </p>
+
+            <button onclick="showPage('message')">
+                Open this for me? 💌
+            </button>
+        </section>
+
+        <section id="message" class="page">
+            <p class="small-text">If I don't say it enough...</p>
+
+            <h2>Thank you, baby. 🤍</h2>
+
+            <p class="message">
+                Thank you for accepting me as I am — even the makulit,
+                clingy, overthinking, and sometimes complicated version of me.
+                Thank you for making me feel comfortable enough to be my
+                real self around you.
+            </p>
+
+            <p class="message">
+                I don't think you realize how much the little things you do
+                mean to me. Sometimes it's not even about the big gestures.
+                It's simply the way you make me feel heard, cared for,
+                and appreciated.
+            </p>
+
+            <p class="message">
+                I'm genuinely grateful that I met you.
+                And honestly, I just really, really like you. 🥹💚
+            </p>
+
+            <button onclick="showPage('things')">
+                There's more... ✨
+            </button>
+        </section>
+
+        <section id="things" class="page">
+            <p class="small-text">Things I appreciate about you</p>
+
+            <h2>Little things about you 💚</h2>
+
+            <div class="cards">
+
+                <div class="card" onclick="reveal(this)">
+                    <span>01</span>
+                    <h3>Your patience</h3>
+                    <p>Tap me 🤍</p>
+                </div>
+
+                <div class="card" onclick="reveal(this)">
+                    <span>02</span>
+                    <h3>Your kindness</h3>
+                    <p>Tap me 🤍</p>
+                </div>
+
+                <div class="card" onclick="reveal(this)">
+                    <span>03</span>
+                    <h3>The way you accept me</h3>
+                    <p>Tap me 🤍</p>
+                </div>
+
+                <div class="card" onclick="reveal(this)">
+                    <span>04</span>
+                    <h3>The peace you give me</h3>
+                    <p>Tap me 🤍</p>
+                </div>
+
+            </div>
+
+            <button onclick="showPage('final')">
+                One last thing... 🥺
+            </button>
+        </section>
+
+        <section id="final" class="page">
+
+            <div class="final-heart">💚</div>
+
+            <h2>Emman,</h2>
+
+            <p class="message">
+                I don't know what the future looks like,
+                but I'm really happy that right now,
+                I get to know you, love you, and make memories with you.
+            </p>
+
+            <p class="message">
+                I hope you always remember that there's someone here
+                who genuinely appreciates you — not just for what you do,
+                but simply for who you are.
+            </p>
+
+            <h3 class="ending">
+                I really, really like you. 🤍
+            </h3>
+
+            <p class="signature">
+                — Angel 💚
+            </p>
+
+            <button onclick="showPage('welcome')">
+                Read it again ↻
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
