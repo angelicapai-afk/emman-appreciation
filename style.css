@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: #f3f8f3;
+    color: #29452f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.page {
+    display: none;
+    background: white;
+    padding: 45px 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(40, 70, 45, 0.12);
+    animation: fadeIn 0.7s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 15px 0 25px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.small-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.65;
+}
+
+.intro,
+.message {
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 18px auto;
+    max-width: 520px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 13px 24px;
+    border: none;
+    border-radius: 30px;
+    background: #547b5b;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.card {
+    padding: 25px 15px;
+    border-radius: 18px;
+    background: #edf5ee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card span {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.card p {
+    font-size: 13px;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+
+.final-heart {
+    font-size: 65px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.ending {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.signature {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .page {
+        padding: 35px 20px;
+    }
+}
